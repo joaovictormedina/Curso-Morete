@@ -1,0 +1,219 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Primeira Seção */
+header {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 150px;
+    border-radius: 15px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Segunda Seção */
+#about-course {
+    background-image: url('img/fundo.2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+}
+
+#about-course .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que o layout flua quando a tela é pequena */
+    min-height: 400px; /* Define uma altura mínima para garantir o alinhamento vertical */
+}
+
+/* Ajuste para garantir que as duas divs se ajustem lado a lado */
+#about-course .info {
+    flex: 1;
+    max-width: 50%;
+    min-width: 300px; /* Define uma largura mínima para garantir que as divs não se sobreponham */
+}
+
+#about-course .form {
+    flex: 1;
+    max-width: 50%;
+    min-width: 300px; /* Define uma largura mínima para garantir que as divs não se sobreponham */
+    background-color: white; /* Fundo branco para a caixa de formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    color: black; /* Cor do texto em preto para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo da caixa branca ao centro */
+}
+
+/* Estilos para o texto da div .info */
+.info h1 {
+    font-size: 4.5em; /* Tamanho do título */
+    font-weight: bold; /* Peso da fonte do título */
+}
+
+.info p {
+    font-size: 1.7em; /* Tamanho do parágrafo */
+    font-weight: lighter; /* Peso da fonte do parágrafo */
+}
+
+.justified-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Estilo do formulário */
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.form input, .form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background-color: darkred;
+}
+
+/* Destaque no Título do Formulário */
+.form h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form .highlight {
+    background-color: red;
+    color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* Terceira Seção */
+#courses {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.course h3 {
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.course p {
+    margin: 0 10px 10px;
+    font-size: 0.9em;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen;
+}
+
+/* Quarta Seção */
+#contact {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Quinta Seção */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #about-course .content {
+        flex-direction: column; /* Empilha o conteúdo verticalmente em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #about-course .info, #about-course .form {
+        max-width: 100%; /* Remove o limite máximo de largura */
+        min-width: 0; /* Remove o limite mínimo de largura */
+    }
+
+    .info h1 {
+        font-size: 2.5em;
+    }
+
+    .info p {
+        font-size: 1.2em;
+    }
+}

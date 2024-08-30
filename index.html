@@ -12,7 +12,7 @@
         <img src="img/logo.png" alt="Logo Curso Morete" class="logo">
         <nav>
             <a href="#courses">Cursos</a>
-            <a href="#contact">Contato</a>
+            <a href="#contact">Contatos</a>
         </nav>
     </header>
     
@@ -20,25 +20,31 @@
     <section id="about-course">
         <div class="content">
             <div class="info">
-                <h1 id="course-title">O Curso de Refrigeração <br>
-                    Ideal para Você!</h1>
+                <h1 id="course-title">O Curso de Refrigeração <br> Ideal para Você!</h1>
                 <p id="course-description" class="justified-text">O curso de Técnico de Refrigeração oferece uma <strong>excelente oportunidade</strong> com baixo custo e retorno rápido. Em <strong>até 2 meses</strong>, você aprenderá a realizar reparos e terá uma ampla rede de apoio após o curso, maximizando seus <strong>ganhos mensais</strong>. Ideal para quem busca uma nova carreira, <strong>renda extra</strong> ou uma atividade gratificante. Com uma formação prática e acessível, você terá flexibilidade para trabalhar de forma autônoma e aproveitar uma <strong>demanda constante no mercado</strong>.</p>
             </div>
             <div class="form">
                 <h2>Preencha seu contato para garantir o <span class="highlight">CURSO</span></h2>
-                <form action="#" method="post">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
                     
-                    <label for="phone">Telefone:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
                     
-                    <label for="course">Escolha o curso:</label>
-                    <select id="course" name="course" required>
-                        <option value="maquina-de-lavar">Máquina de Lavar</option>
-                        <option value="geladeira-e-bebedouro">Geladeira e Bebedouro</option>
-                        <option value="ar-condicionado">Ar Condicionado</option>
-                    </select>
+                    <div class="form-group">
+                        <label for="course">Escolha o curso:</label>
+                        <select id="course" name="course" required>
+                            <option value="">Selecione um curso</option>
+                            <option value="maquina-de-lavar">Máquina de Lavar</option>
+                            <option value="geladeira-e-bebedouro">Geladeira e Bebedouro</option>
+                            <option value="ar-condicionado">Ar Condicionado</option>
+                        </select>
+                    </div>
                     
                     <button type="submit">Enviar</button>
                 </form>
@@ -51,20 +57,38 @@
         <div class="course">
             <img src="img/m.lavar.png" alt="Máquina de Lavar">
             <h3>Máquina de Lavar</h3>
-            <p>Detalhes sobre a máquina de lavar.</p>
-            <a href="https://wa.me/1234567890" class="whatsapp-button">Fale conosco</a>
+            <ul>
+                <li>Diagnóstico e solução de problemas comuns.</li>
+                <li>Troca de peças e manutenção preventiva.</li>
+                <li>Limpeza e desobstrução de componentes.</li>
+                <li>Configuração e ajustes do funcionamento.</li>
+                <li>Segurança e boas práticas no manuseio.</li>
+            </ul>
+            <a href="https://wa.me/5521987570827" class="whatsapp-button">Fale conosco</a>
         </div>
         <div class="course">
             <img src="img/geladeira.png" alt="Geladeira e Bebedouro">
             <h3>Geladeira e Bebedouro</h3>
-            <p>Detalhes sobre a geladeira e bebedouro.</p>
-            <a href="https://wa.me/1234567890" class="whatsapp-button">Fale conosco</a>
+            <ul>
+                <li>Identificação e reparo de falhas comuns.</li>
+                <li>Troca de componentes e manutenção geral.</li>
+                <li>Descongelamento e limpeza de circuitos.</li>
+                <li>Ajustes de temperatura e funcionamento.</li>
+                <li>Segurança e eficiência energética.</li>
+            </ul>
+            <a href="https://wa.me/5521987570827" class="whatsapp-button">Fale conosco</a>
         </div>
         <div class="course">
             <img src="img/ar.cond.png" alt="Ar Condicionado">
             <h3>Ar Condicionado</h3>
-            <p>Detalhes sobre o ar condicionado.</p>
-            <a href="https://wa.me/1234567890" class="whatsapp-button">Fale conosco</a>
+            <ul>
+                <li>Manutenção e limpeza de filtros e bobinas.</li>
+                <li>Reparo de vazamentos e falhas elétricas.</li>
+                <li>Troca de peças e ajustes de desempenho.</li>
+                <li>Calibração e configuração de termostatos.</li>
+                <li>Boas práticas e segurança no manuseio.</li>
+            </ul>
+            <a href="https://wa.me/5521987570827" class="whatsapp-button">Fale conosco</a>
         </div>
     </section>
     

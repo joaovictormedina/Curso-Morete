@@ -9,15 +9,18 @@ body {
 header {
     background-color: blue;
     color: white;
-    padding: 10px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header .logo {
     max-width: 150px;
-    border-radius: 15px;
+    border-radius: 35px;
+    padding: 20px;
 }
 
 header nav {
@@ -34,55 +37,64 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+header nav a[href="#contact"] {
+    margin-right: 20px;
+}
+
 /* Segunda Seção */
 #about-course {
     background-image: url('img/fundo.2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 20px;
     color: white;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #about-course .content {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Alinha verticalmente ao centro */
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Permite que o layout flua quando a tela é pequena */
-    min-height: 400px; /* Define uma altura mínima para garantir o alinhamento vertical */
+    flex-wrap: wrap;
+    min-height: 400px;
 }
 
-/* Ajuste para garantir que as duas divs se ajustem lado a lado */
 #about-course .info {
     flex: 1;
     max-width: 50%;
-    min-width: 300px; /* Define uma largura mínima para garantir que as divs não se sobreponham */
+    min-width: 300px;
 }
 
 #about-course .form {
     flex: 1;
     max-width: 50%;
-    min-width: 300px; /* Define uma largura mínima para garantir que as divs não se sobreponham */
-    background-color: white; /* Fundo branco para a caixa de formulário */
+    min-width: 300px;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-    color: black; /* Cor do texto em preto para contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha o conteúdo da caixa branca ao centro */
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Estilos para o texto da div .info */
 .info h1 {
-    font-size: 4.5em; /* Tamanho do título */
-    font-weight: bold; /* Peso da fonte do título */
+    font-size: 4.5em;
+    font-weight: bold;
 }
 
 .info p {
-    font-size: 1.7em; /* Tamanho do parágrafo */
-    font-weight: lighter; /* Peso da fonte do parágrafo */
+    font-size: 1.7em;
+    font-weight: lighter;
 }
 
 .justified-text {
@@ -100,9 +112,11 @@ header nav a:hover {
 
 .form input, .form select {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 1em;
+    box-sizing: border-box;
 }
 
 .form button {
@@ -120,93 +134,101 @@ header nav a:hover {
     background-color: darkred;
 }
 
-/* Destaque no Título do Formulário */
 .form h2 {
     font-size: 1.8em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .form .highlight {
-    background-color: red;
-    color: white;
-    padding: 0 5px;
-    border-radius: 3px;
+    color: red;
 }
 
 /* Terceira Seção */
 #courses {
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .course {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
     border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: 300px;
 }
 
 .course img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .course h3 {
-    margin: 10px;
-    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.course p {
-    margin: 0 10px 10px;
-    font-size: 0.9em;
+.course ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course ul li {
+    margin: 5px 0;
 }
 
 .whatsapp-button {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: green;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    text-align: center;
-    margin: 10px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .whatsapp-button:hover {
-    background-color: darkgreen;
+    background-color: darkred;
 }
 
 /* Quarta Seção */
 #contact {
-    padding: 20px;
     background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Quinta Seção */
 footer {
-    padding: 10px;
-    text-align: center;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     #about-course .content {
-        flex-direction: column; /* Empilha o conteúdo verticalmente em telas menores */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column;
+        align-items: center;
     }
 
     #about-course .info, #about-course .form {
-        max-width: 100%; /* Remove o limite máximo de largura */
-        min-width: 0; /* Remove o limite mínimo de largura */
+        max-width: 100%;
+        min-width: 0;
     }
 
     .info h1 {
@@ -215,5 +237,15 @@ footer {
 
     .info p {
         font-size: 1.2em;
+    }
+
+    .course {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        width: 100%;
     }
 }
